@@ -1,0 +1,7 @@
+/* variables.css · Colores y tipografías (cambia el look aquí) */
+:root{
+  --paper:#f5f1e8; --panel:#fbf9f4; --ink:#17241c; --mut:#6d7a6f; --line:rgba(23,36,28,.14);
+  --g:#1f5d3a; --ok:#2a7a4b; --mango:#b98a1d; --warn:#b98a1d; --bad:#c4422b; --tomato:#c4422b; --mustard:#d9a82e;
+  --card:#fbf9f4; --ok-bg:transparent; --warn-bg:transparent; --bad-bg:transparent;
+  --f-head:"Fraunces",Georgia,serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+}

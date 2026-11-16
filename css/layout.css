@@ -1,0 +1,31 @@
+/* layout.css · Menú lateral, barra superior y página */
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:14.5px/1.5 var(--f-body)}
+button,input,select{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--f-head);font-weight:600;margin:0}
+a{color:var(--g)}select option{color:#17241c}
+:focus-visible{outline:2px solid var(--tomato);outline-offset:2px}
+.shell{display:flex;min-height:100vh}
+.sidebar{width:232px;flex:none;position:sticky;top:0;height:100vh;background:var(--ink);color:#cdd8cf;padding:28px 0;display:flex;flex-direction:column}
+.brand{padding:0 24px 30px;font:600 25px var(--f-head);color:#f5f1e8;display:flex;align-items:center;gap:10px}
+.brand small{display:block;font:500 10.5px var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:#8fa596}
+.logo-i{width:34px;height:34px;border-radius:50%;object-fit:cover}.lg{width:18px;height:18px;border-radius:50%;background:var(--mustard)}
+.menu button{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;border-left:3px solid transparent;background:none;color:#cdd8cf;padding:11px 24px;cursor:pointer;text-align:left}
+.menu button:hover{background:rgba(255,255,255,.05)}
+.menu button.on{border-left-color:var(--mustard);background:rgba(255,255,255,.08);color:#fff;font-weight:600}
+.bdg{font:600 11px var(--f-mono);background:var(--tomato);color:#fff;border-radius:3px;padding:1px 6px;font-style:normal}
+.sb-foot{margin-top:auto;padding:0 24px;font:11px/1.5 var(--f-mono);color:#7f9687}
+.content{flex:1;min-width:0}
+.topbar{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 32px;background:var(--paper);border-bottom:1px solid var(--line)}
+.gsearch{width:300px;max-width:60%;border:1px solid var(--line);background:var(--panel);border-radius:5px;padding:9px 14px}
+.bell{position:relative;width:42px;height:40px;border:1px solid var(--ink);border-radius:5px;background:none;cursor:pointer;display:grid;place-items:center}
+.bell:hover{background:var(--ink);color:var(--paper)}
+.bell i{position:absolute;top:-7px;right:-7px;min-width:19px;height:19px;padding:0 4px;background:var(--tomato);color:#fff;border-radius:3px;font:600 11px/19px var(--f-mono);font-style:normal;text-align:center;display:none}
+.page{padding:30px 32px 70px;max-width:1280px}
+@media (max-width:900px){
+  .sidebar{position:fixed;inset:auto 0 0 0;width:auto;height:auto;flex-direction:row;padding:0;z-index:75;border-top:2px solid var(--mustard)}
+  .brand,.sb-foot{display:none}.menu{display:flex;width:100%}
+  .menu button{flex:1;flex-direction:column;gap:2px;padding:10px 2px;font-size:11px;text-align:center;border-left:0}
+  .menu button.on{background:rgba(255,255,255,.12)}
+  .topbar{padding:10px 14px}.page{padding:20px 14px 100px}
+}

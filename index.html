@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nutri Bubble · Inventario y proveedores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><img class="logo-i" src="assets/logo.png" alt="" onerror="this.outerHTML='<i class=lg></i>'"><div>Nutri Bubble<small>Inventario</small></div></div>
+      <nav class="menu" id="menu"></nav>
+      <div class="sb-foot">Los datos se guardan<br>en este navegador.</div>
+    </aside>
+    <div class="content">
+      <header class="topbar">
+        <input id="gq" class="gsearch" placeholder="Buscar insumo…" aria-label="Buscar insumo">
+        <button class="bell" data-a="bell" aria-label="Notificaciones"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><i id="bd"></i></button>
+      </header>
+      <main class="page" id="view"></main>
+    </div>
+  </div>
+  <div id="npanel"></div><div id="pops" class="pops"></div><div id="modal"></div><div id="toast" class="nbtoast" role="status"></div>
+  <script src="js/store.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
